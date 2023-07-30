@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hash Generator</title>
+</head>
+<body>
+    <h1>Hash Generator</h1>
+
+    <form id="hashForm">
+        <label>
+            <input type="radio" name="hashType" value="SHA3-224" checked> SHA3-224
+        </label>
+        <label>
+            <input type="radio" name="hashType" value="SHA3-256"> SHA3-256
+        </label>
+        <label>
+            <input type="radio" name="hashType" value="SHA3-384"> SHA3-384
+        </label>
+        <label>
+            <input type="radio" name="hashType" value="SHA3-512"> SHA3-512
+        </label>
+        <br>
+        <input type="text" id="textInput" placeholder="Enter text here...">
+        <button type="submit">Generate Hash</button>
+    </form>
+
+    <p id="hashOutput"></p>
+
+    <script src="dompurify.js"></script>
+    <script src="sha3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
